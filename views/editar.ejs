@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <% include partials/head.ejs %>
+        <title>UA - Editar Usuario</title>
+    </head>
+    <body>
+        <header>
+            <div class="encabezado boton"><a href="aviones">Aviones</a></div>
+            <div class="encabezado" id="titulo"><a href="/">Uncharted Airlines</a></div>
+            <div class="encabezado boton"><a href="usuarios">Usuarios</a></div>
+        </header>
+
+        <!-- Edición -->
+        <div name="formEditar">
+            <form action="/editar" method="post">
+                <div class="form-group">
+                    <label for="pasaporte">Pasaporte</label>
+                    <input type="hidden" class="form-control" name="pasaporteE" id="pasaporte" value="<%= usuario.pasaporte %>">
+
+                    <input type="text" class="form-control" name="pasaporte" id="pasaporte" value="<%= usuario.pasaporte %>" disabled>
+                    
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" name="nombreE" id="nombre" value="<%= usuario.nombre %>">
+    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" name="apellidoE" id="apellido" value="<%= usuario.apellido %>">
+    
+                    <label for="telf">Teléfono</label>
+                    <input type="number" class="form-control" name="telfE" id="telf" value="<%= usuario.telefono %>">
+    
+                    <label for="correo">Correo</label>
+                    <input type="email" class="form-control" name="correoE" id="correo" value="<%= usuario.correo %>">
+    
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" name="nacimientoE" id="nacimiento" value="<%= usuario.fecha_nacimiento %>" disabled>  
+                    
+                    <label for="direccion">Dirección</label>
+                    <textarea class="form-control" name="direccionE" id="direccion" rows="3"><%= usuario.direccion %></textarea>    
+    
+                    <label for="sexo">Sexo</label>
+                    <select class="form-control" name="sexoE" id="sexo">
+                        <% if(usuario.sexo == "Hombre"){  %>
+                            <option selected>Hombre</option>
+                        <% } else { %>
+                            <option>Hombre</option>
+                        <% } %>
+                        <% if(usuario.sexo == "Mujer"){  %>
+                            <option selected>Mujer</option>
+                        <% } else  { %>
+                            <option>Mujer</option>
+                        <% } %>
+                        <% if(usuario.sexo == "Otro"){  %>
+                            <option selected>Otro</option>
+                        <% } else { %>
+                            <option>Otro</option>
+                        <% } %>
+                    </select>
+                                                                
+                    <label for="nacionalidad">Nacionalidad</label>
+                    <input type="text" class="form-control" name="nacionalidadE" id="nacionalidad"  value="<%= usuario.nacionalidad %>">
+                
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div> 
+            </form>
+        </div> 
+        
+        <% include partials/scripts.ejs %>
+    </body>
+</html>
+
+
+
+
+
+
+

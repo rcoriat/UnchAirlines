@@ -1,0 +1,110 @@
+/*-----------
+    General
+------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*-----------
+    Header
+------------*/
+
+header {
+    margin: 0 auto;
+}
+
+.encabezado {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 25px
+}
+
+.boton {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.boton a {
+    text-decoration: none;
+    color: black
+}
+
+.boton a:hover {
+    color: lightblue;
+}
+
+#titulo {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#titulo a {
+    text-decoration: none;
+}
+
+/*-----------
+    Body 
+------------*/
+
+#banner {
+    margin-top: 25px; 
+    width: 100%;
+    background: #1875ff;
+}
+
+#banner img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*-----------
+    Usuarios
+------------*/
+
+#botones {
+    width: 75%;
+    margin: 30px auto;  
+}
+
+#botones button {
+    width: 24.5%;
+    display: inline-block;
+}
+
+#botones button a {
+    text-decoration: none;
+    color: white; 
+}
+
+
+div[name="formAñadir"], div[name="editar"], div[name="formEditar"], div[name="listadoDB"], div[name="eliminar"] {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/*-----------
+    Lista
+------------*/
+
+#tablaLista {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 85%;
+}
+
+#tablaLista h5 {
+    margin-bottom: 20px;
+}
+
+#botonRegresar{
+    margin-top: 10px;
+}
+
+#botonRegresar a {
+    text-decoration: none;
+    color: white; 
+}
