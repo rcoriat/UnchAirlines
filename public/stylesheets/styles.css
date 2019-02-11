@@ -56,10 +56,17 @@ header{
     display: block;
     padding: 2vw;
 }
-#contenido .jumbotron{
+
+#busqueda {
     width: 60%;
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+}
+
+#idavuelta{
+    margin-bottom: 2%;
 }
 
 /*-----------
@@ -131,8 +138,9 @@ div[name="formAñadir"], div[name="editar"], div[name="formEditar"], div[name="l
 
 }
 
-#destinos > h4 {
+#destinos h4 {
     margin-top: 2%;
     margin-bottom: 4%;
     margin-left: 4%;
 }
+

@@ -6,12 +6,23 @@
     </head>
     <body>
         <% include partials/first_header.ejs %>
+
         <div id="contenido">
-            <div class="jumbotron bg-white text-black">
+            <div id="busqueda">
                 <h1 class="display-4">¡Hola!</h1>
-                <p class="lead">Selecciona tus preferencias para buscar un vuelo</p>
+                <h5>Selecciona tus preferencias para buscar un vuelo</h5>
                 <hr class="my-6">
                 <form>
+                    <div class="form-row" id="idavuelta">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Ida y vuelta</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Sólo ida</label>
+                        </div>
+                    </div>
                     <div class="form-row">
                         <div class="form-group col-md-5">
                             <label for="inputOrigen">Origen</label>
@@ -28,7 +39,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-md-5">
                             <label for="inputFecha">Fecha</label>
@@ -39,81 +49,80 @@
                             <select class="form-control" id="inputDestino">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-transparent">Buscar</button>
                 </form>
             </div>
         </div>
 
         <div id="destinos">
-            <h4>Nuestros destinos</h4>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/atlanta.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Atlanta</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
+                <h4>Nuestros destinos</h4>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/atlanta.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Atlanta</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/ccs.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caracas</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/dubai.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dubai</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/ccs.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Caracas</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
+                    <br>
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/miami.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Miami</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/dubai.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Dubai</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/ny.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">New York</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/miami.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Miami</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/ny.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">New York</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="/imagenes/paris.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">París</h5>
-                                <p class="card-text">  </p>
-                                <a href="#" class="btn btn-primary">Ver destino</a>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="/imagenes/paris.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">París</h5>
+                                    <p class="card-text">  </p>
+                                    <a href="#" class="btn btn-primary">Ver destino</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         
         
         <% include partials/scripts.ejs %>
