@@ -22,17 +22,8 @@ var db = require('./config/database');
 // Home
 app.get('/', routes.home);
 
-//Aviones
-app.get('/aviones', routes.aviones);
-
-//Usuarios
-app.get('/usuarios', routes.usuarios);
-
-//Lista
-app.get('/lista', routes.lista);
-
-//Editar
-app.get('/editar', routes.editar);
+//Estado del vuelo
+app.get('/estado-vuelo', routes.estadovuelo);
 
 // 404
 app.get('*', routes.notFound);
@@ -40,11 +31,11 @@ app.get('*', routes.notFound);
 //---------//
 // Routes //
 //--POST-//
-
+/*
 app.post('/usuarios', routes.add);
 
 app.post('/editar', routes.edicion);
-
+*/
 ///////////////////////////////////////
 
 app.listen(3000, function(){

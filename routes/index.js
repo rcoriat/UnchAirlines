@@ -4,28 +4,16 @@ exports.home = function(req, res) {
     }); 
 };
 
-exports.aviones = function(req, res) {
-    res.render('aviones', {
-        title : 'UA - Aviones'
-    });  
+exports.estadovuelo = function(req, res) {
+    res.render('estado_vuelo');  
 };
 
-exports.usuarios = function(req, res) {
-    res.render('usuarios', {
-        title : 'UA - Usuarios'
-    }); 
-};
-
-exports.editar = function(req, res) {
-    res.render('editar', {
-        title : 'UA - Editar Usuario'
-    }); 
-};
 
 exports.notFound = function(req, res) {
-    res.render('usuarios'); 
+    res.render('home'); 
 };
 
+/*
 exports.add = function(req, res) {
     var usuario = require("../models/usuario");
     
@@ -148,3 +136,4 @@ exports.lista = function(req, res) {
         })
     }).catch(err => console.log(err));
 }
+*/

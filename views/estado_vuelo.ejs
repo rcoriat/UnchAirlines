@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <% include partials/head.ejs %>
+        <title>UA - Estado del vuelo</title>
+    </head>
+    <body>
+        <% include partials/first_header.ejs %>
+
+        <div id="banner_estado">
+           <h3>Estado del vuelo</h3>
+        </div>
+
+        <div id="busca_estado">
+            <form>
+                <div class="form-group row">
+                    <label for="inputNVuelo">Ingresa el número del vuelo</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="inputNVuelo" placeholder="">
+                    </div>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+
+
+
+
+
+         
+        <% include partials/scripts.ejs %>
+        <% include partials/footer.ejs %>
+    </body>
+</html>
