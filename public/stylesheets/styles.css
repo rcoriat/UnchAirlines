@@ -150,8 +150,8 @@ div[name="formAñadir"], div[name="editar"], div[name="formEditar"], div[name="l
 ---------------------*/
 
 #banner_estado {
-    background-image: url("https://www.newcastleairport.com/media/1549/timetable-banner.jpg");
-    background-size: 100% 300%;
+    background-image: url("https://images.pexels.com/photos/1059608/pexels-photo-1059608.jpeg?cs=srgb&dl=aeroplane-aircraft-airplane-1059608.jpg&fm=jpg");
+    background-size: 100% 250%;
     background-repeat: no-repeat;
     width: 100%;
     padding: 6vw;
@@ -165,17 +165,10 @@ div[name="formAñadir"], div[name="editar"], div[name="formEditar"], div[name="l
     bottom: 1vw;
 }
 
-#busca_estado{
-    padding: 2vw;
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-    border: 5px solid rgba(163,163,163,0.65);
-    border-radius: 14px;
+#busca_estado {
+    background-color: whitesmoke
+
 }
 
 
-#busca_estado label{
-    vertical-align: bottom; 
-}
 
