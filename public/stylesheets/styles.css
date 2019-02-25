@@ -166,9 +166,34 @@ div[name="formAñadir"], div[name="editar"], div[name="formEditar"], div[name="l
 }
 
 #busca_estado {
-    background-color: whitesmoke
-
+    background-color: whitesmoke;
+    width: 50%;
+    font-size: 2vw;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 4vw;
+    margin-top: 2vw;
 }
 
+#busca_estado form:last-child{
+    width: 100%;
+    text-align: right;
+}
 
+#busca_estado button{
+    display: inline-block;
+}
 
+#form_bvuelo {
+    width: 100%;
+}
+
+#form_bvuelo:first-child {
+    width: 70%;
+    display: inline-block;
+}
+
+#form_bvuelo div:eq(1) {
+    width: 10%;
+    display: inline-block;
+}

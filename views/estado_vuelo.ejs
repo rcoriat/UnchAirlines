@@ -13,22 +13,21 @@
 
         <div id="busca_estado">
             <form>
-                <div>
-                    <label for="inputNVuelo">Ingresa el número del vuelo</label>
-                    <div class="col-sm-2">
-                        <input type="text" class="form-control" id="inputNVuelo" placeholder="">
+                <div id="form_bvuelo">
+                    <div>
+                        <label for="inputNVuelo">Ingresa el número del vuelo:</label>
                     </div>
-                    
+                    <div>
+                        <input type="text" class="form-control" id="inputNVuelo" placeholder="Número de vuelo">
+                    </div>    
                 </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                <div>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
             </form>
         </div>
+        
 
-
-
-
-
-         
         <% include partials/scripts.ejs %>
         <% include partials/footer.ejs %>
     </body>
